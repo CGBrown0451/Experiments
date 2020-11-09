@@ -16,7 +16,7 @@ AChr_CNavAgent::AChr_CNavAgent()
 void AChr_CNavAgent::BeginPlay()
 {
 	Super::BeginPlay();
-	navSys = UNavigationSystemV1::GetCurrent(GetWorld());
+	//navSys = UNavigationSystemV1::GetCurrent(GetWorld());
 	
 }
 
@@ -33,7 +33,7 @@ void AChr_CNavAgent::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
-
+/*
 bool AChr_CNavAgent::DoFlank(FVector Start, FVector End, FNavAgentProperties NavAgentProperties, bool doVisCheck, float angle, float bisection)
 {
 	FVector MoveVector = Start - End;
@@ -94,7 +94,9 @@ bool AChr_CNavAgent::DoFlank(FVector Start, FVector End, FNavAgentProperties Nav
 	return true;
 
 }
-
+*/
+/*
 void AChr_CNavAgent::MoveCallback(uint32 id, ENavigationQueryResult::Type type, FNavPathSharedPtr ptr)
 {
 }
+*/

@@ -19,8 +19,8 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	UPROPERTY()
-	UNavigationSystemV1* navSys;
+	
+	//UNavigationSystemV1* navSys;
 
 public:	
 	// Called every frame
@@ -29,10 +29,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UFUNCTION()
-	bool DoFlank(FVector Start, FVector End, FNavAgentProperties NavAgentProperties, bool doVisCheck, float angle, float bisection);
+	//bool DoFlank(FVector Start, FVector End, FNavAgentProperties NavAgentProperties, bool doVisCheck, float angle, float bisection);
 
-	void MoveCallback(uint32 id, ENavigationQueryResult::Type type, FNavPathSharedPtr ptr);
+	//void MoveCallback(uint32 id, ENavigationQueryResult::Type type, FNavPathSharedPtr ptr);
 };
 
 
